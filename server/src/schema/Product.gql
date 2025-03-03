@@ -1,7 +1,7 @@
 type Product {
   id: ID!
   name: String!
-  code: String @Deprecated
+  code: String
   price: Float
   inventory: Inventory!
 }

@@ -1,0 +1,4 @@
+server/node_modules
+server/src/generated
+client/node_modules
+client/src/generated
