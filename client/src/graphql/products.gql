@@ -1,0 +1,45 @@
+query GetProducts($criteria: ProductSearchCriteria) {
+  products(criteria: $criteria) {
+    id
+    name
+    code
+    price
+  }
+}
+
+query GetProductDetail($productId: ID!) {
+  product(id: $productId) {
+    id
+    name
+    code
+    price
+    inventory {
+      product_id
+      stock
+      location
+    }
+  }
+}
+
+mutation CreateProduct($input: ProductCreateInput!) {
+  createProduct(input: $input) {
+    id
+    name
+    code
+    price
+  }
+}
+
+mutation UpdateProduct($input: ProductUpdateInput!) {
+  updateProduct(input: $input) {
+    id
+    name
+    code
+    price
+    inventory {
+      product_id
+      stock
+      location
+    }
+  }
+}

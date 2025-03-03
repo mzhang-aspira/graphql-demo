@@ -1,0 +1,49 @@
+type Product {
+  id: ID!
+  name: String!
+  code: String @Deprecated
+  price: Float
+  inventory: Inventory!
+}
+
+type Inventory {
+  product_id: ID!
+  stock: Int!
+  location: String
+}
+
+type Query {
+  products(criteria: ProductSearchCriteria): [Product!]
+  product(id: ID!): Product
+}
+
+type Mutation {
+  createProduct(input: ProductCreateInput!): Product!
+  updateProduct(input: ProductUpdateInput!): Product!
+}
+
+input ProductSearchCriteria {
+  id: String
+  name: String
+  code: String
+}
+
+input ProductCreateInput {
+  name: String!
+  code: String!
+  price: Float!
+}
+
+input ProductUpdateInput {
+  id: String!
+  name: String!
+  code: String!
+  price: Float!
+  inventory: InventoryInput!
+}
+
+input InventoryInput {
+  product_id: String!
+  stock: Int!
+  location: String!
+}
