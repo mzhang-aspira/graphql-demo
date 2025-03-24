@@ -1,5 +1,8 @@
 # Getting Started
 
+## NodeJS and NPM version
+Please upgrade your nodeJS to version v22.14.0, npm to version 11.2.0
+
 ## Server
 
 1. cd to "server"
