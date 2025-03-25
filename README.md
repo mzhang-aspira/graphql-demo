@@ -2,7 +2,10 @@
 
 ## NodeJS and NPM version
 
-Please upgrade your nodeJS to version v22.14.0, npm to version 11.2.0
+Please upgrade your NodeJS and npm to below version(suggest use nvm to manage node version):
+$ node -v && npm -v
+v22.14.0
+10.9.2
 
 ## Troubleshoot
 
