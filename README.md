@@ -1,7 +1,12 @@
 # Getting Started
 
 ## NodeJS and NPM version
+
 Please upgrade your nodeJS to version v22.14.0, npm to version 11.2.0
+
+## Troubleshoot
+
+If you encounter any issue when running "npm install", try to delete "node_modules" and package-lock.json, and then rerun "npm install"
 
 ## Server
 
